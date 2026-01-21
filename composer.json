@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "toufiq-atpl/laravel",
+    "name": "toufiq-atpl/frankenphp-docker-laravel",
     "type": "project",
     "description": "A Laravel project",
     "keywords": ["laravel", "framework"],
