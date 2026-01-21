@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: laravel_octane_local
+    ports:
+      - "8888:8000"
+    volumes:
+      - .:/var/www/html
+    environment:
+      APP_ENV: "local"
+      APP_DEBUG: "true"
+      OCTANE_SERVER: "frankenphp"
+    command: php artisan octane:start --server=frankenphp --host=0.0.0.0 --port=8000 --watch
